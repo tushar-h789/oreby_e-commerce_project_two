@@ -14,7 +14,7 @@ const Products = ({src, badge}) => {
         <Image imgsrc={src}/>
         
         {badge && <Badge title="New"/> }
-        <div className='bg-white md:bottom-[-42%] bottom-[-42%]  md:max-xl:bottom-[-62%] group-hover:bottom-0 h-40 absolute bottom-0 left-0 w-full py-6 px-7 ease-in duration-300'>
+        <div className='bg-white md:bottom-[-40%] bottom-[-42%]  md:max-xl:bottom-[-62%] group-hover:bottom-0 h-40 absolute bottom-0 left-0 w-full py-6 px-7 ease-in duration-300'>
         <Flex className="flex gap-x-1 sm:gap-x-4 items-center justify-end">
             <p className='font-dm font-regular md:max-xl:text-sm text-base sm:text-base text-[#6D6D6D]' >Add to Wish List</p>
             <AiFillHeart className='text-base  '/>
