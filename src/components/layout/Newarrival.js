@@ -1,15 +1,12 @@
 import Container from './Container'
 import React from 'react'
 import Heading from './Heading'
-import Flex from './Flex'
 import Products from './Products'
 import Slider from "react-slick";
 import SampleNextArrow from './SampleNextArrow'
 import SamplePrevArrow from './SamplePrevArrow'
 
 const Newarrival = () => {
-
-  
 
   const settings = {
     infinite: true,
