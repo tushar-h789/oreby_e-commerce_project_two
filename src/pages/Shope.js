@@ -4,6 +4,7 @@ import Breadcrumb from "../components/layout/Breadcrumb";
 import Flex from "../components/layout/Flex";
 import Pagination from "../components/layout/Pagination";
 import ShotBy from "../components/layout/ShotBy";
+import LeftSidebar from "../components/layout/LeftSidebar";
 
 const Shope = () => {
   let [showNumber, setShowNumber] = useState(12);
@@ -16,7 +17,9 @@ const Shope = () => {
     <Container>
       <Breadcrumb title="product" />
       <Flex className="flex gap-x-10">
-        <div className="w-[25%] bg-red-500">afdsa</div>
+        <div className="w-[25%] bg-red-500">
+          <LeftSidebar/>
+        </div>
         <div className="relative w-[75%] ">
           <label
             for="countries"
