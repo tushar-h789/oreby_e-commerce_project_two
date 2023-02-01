@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import {GoTriangleDown} from "react-icons/go"
+import {AiOutlinePlus, AiOutlineMinus} from "react-icons/ai"
 
-const LeftSitebarItem = ({subdropdown, title}) => {
-    let [drop, setDrop] = useState(subdropdown)
+const LeftSitebarItem = (props) => {
+    let [drop, setDrop] = useState(props.subdropdown)
     let [show, setShow] = useState(false)
 
   return (
@@ -10,20 +10,30 @@ const LeftSitebarItem = ({subdropdown, title}) => {
         {drop 
         ? 
         <div onClick={()=>{setShow(!show)}} 
-        className='flex justify-between items-center cursor-pointer'>
-        <h3>{title}</h3>
-        <GoTriangleDown/>
+        className='flex justify-between items-center cursor-pointer border-b border-solid border-[#767676] py-5'>
+        <h3 className='font-dm font-regular text-base cursor-pointer text-[#767676]'>
+          {props.color &&
+            <span className='inline-block h-[11px] w-[11px] rounded-full mr-2' style={{background:props.color}}></span>
+          }
+          {props.title}</h3>
+        <AiOutlinePlus className='text-[#767676]'/>
     </div>
         :
-        <h3 className='cursor-pointer'>{title}</h3>
+        <>
+          <div
+        className='flex justify-between items-center cursor-pointer border-b border-solid border-[#767676] py-5'>
+        <h3 className='font-dm font-regular text-base cursor-pointer text-[#767676]'>
+          {props.color &&
+            <span className='inline-block h-[11px] w-[11px] rounded-full mr-2' style={{background:props.color}}></span>
+          }
+          {props.title}</h3>
+    </div>
+        </>
         }
 
         {show &&
     <div>
-        <p>asdfadfsasdf</p>
-        <p>asdfadfsasdf</p>
-        <p>asdfadfsasdf</p>
-        <p>asdfadfsasdf</p>
+        {props.children}
     </div>
     }
     </div>

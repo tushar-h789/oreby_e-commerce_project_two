@@ -22,7 +22,6 @@ function Navbar() {
         setShow(true);
       }
     }
-
     scrollWidth();
     window.addEventListener("resize", scrollWidth); //resize er moddhome page ta responsiv hocche.
   }, []);

@@ -9,7 +9,7 @@ const ShotBy = (props) => {
               </span>
               <select
                 id="countries"
-                class="focus:border-black-500 font-regular block md:w-[239px] border border-[#F0F0F0] bg-gray-50 p-2.5 font-dm text-sm text-base text-[#767676] "
+                class="focus:border-black-500 font-regular block md:w-[239px] w-[110px] border border-[#F0F0F0] bg-gray-50 p-1.5 font-dm text-sm text-base text-[#767676] "
               >
                 <option selected className="font-regular font-dm text-base">
                   Featured
